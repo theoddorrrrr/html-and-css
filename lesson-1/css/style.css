@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #81CDC1;
+    background: -webkit-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: -moz-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: linear-gradient(to bottom right, #81CDC1, #AA17F6); 
+}
+
+h1 {
+    text-align: center;;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.data {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result {
+    background-color: rgb(37, 162, 99);
+    padding: 20px 70px;
+    border-radius: 20px 0px 40px 0px;
+    max-width: 400px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
