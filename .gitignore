@@ -21,3 +21,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Node modules
+lesson-6/node_modules

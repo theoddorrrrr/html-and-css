@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #81CDC1;
+    background: -webkit-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: -moz-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: linear-gradient(to bottom right, #81CDC1, #AA17F6); 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.map { 
+    height: 500px;
+    width: 700px;
+    position: relative;
+}
+
+img {
+    width: 700px;
+}
+
+.hotel {
+    position: absolute;
+    z-index: 2;
+    color: rgb(2, 2, 2);
+    transition: 0.3s ease;
+}
+
+.hotel:hover {
+    color: red;
+}
+
+.hotel:after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    animation: hotel infinite ease 1s;
+}
+
+.hotel:hover:after {
+    animation-play-state: paused;
+    opacity: 0;
+}
+
+@keyframes hotel {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+
+.madrid {
+    bottom: 80px;
+    left: 230px;
+}
+
+.turin {
+    left: 320px;
+    bottom: 25%;
+}
+
+.hamburg {
+    top: 55%;
+    left: 50%;
+}
+
+.krakow {
+    top: 55%;
+    right: 25%;
+}
+
+.buy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+    padding: 3rem;
+    color: white;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    margin: 1rem 0 0 0;
+    transition: 0.5s ease;
+}
+
+.place {
+    text-align: center;
+}
+
+.hide {
+    opacity: 0;
+}

@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #81CDC1;
+    background: -webkit-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: -moz-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: linear-gradient(to bottom right, #81CDC1, #AA17F6); 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+} 
+
+h2 {
+    margin: 0.67em 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    text-align: center;
+}
+
+.result {
+    margin: 1rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.buttons button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: orange;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 1rem;
+}

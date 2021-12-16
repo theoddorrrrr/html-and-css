@@ -1,0 +1,191 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+input {
+    border: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    height: 300px;
+    background: url('../img/1.jpg') center no-repeat;
+}
+
+header .title {
+    display: flex;
+    background-color: grey;
+    line-height: 150%;
+    padding: 5px 0;
+}
+
+header span {
+    color: red;
+}
+
+header button {
+    border: 0;
+    border-radius: 0;
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    width: 150px;
+}
+
+article {
+    display: flex;
+}
+
+main {
+    flex: 1 1 65%;
+    min-height: 100vh;
+}
+
+aside {
+    flex: 1 1 35%;
+    background-color: rgb(223, 212, 192);
+    min-height: 100vh;
+}
+
+.card {
+    margin: 1rem 0 0 0;
+    width: 100%;
+}
+
+.card__title {
+    font-size: 1.3rem;
+    color: darkred;
+}
+
+.card__subtitle {
+    color: rgb(87, 87, 87);
+}
+
+.card__body {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0;
+}
+
+.card__img {
+    min-width: 200px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card__text {
+    padding: 1rem;
+    line-height: 150%;
+}
+
+.card__footer {
+    display: flex;
+    background-color: darkred;
+    word-spacing: 2rem;
+    color: white;
+    padding: 0.3rem;
+}
+
+aside {
+    padding: 2rem;
+}
+
+h2 {
+    color: darkred;
+    margin-bottom: 0.5rem;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: darkred;
+}
+
+form .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: start;
+    gap: 0.2rem;
+}
+
+form label {
+    color: black;
+}
+
+form .login-block {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin-top: 1rem;
+    border: 0;
+    border-radius: 0;
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    width: 80px;
+}
+
+
+nav {
+    margin-top: 1.5rem;
+}
+
+nav ul {
+    margin: 0.5rem;
+}
+
+nav .nav__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 800px) {
+    article {
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        min-height: auto;
+    }
+
+    form {
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    header button {
+        display: none;
+    }
+
+    .card .card__body {
+        flex-direction: column;
+    }
+}
+
+

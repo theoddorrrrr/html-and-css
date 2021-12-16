@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+    <link rel="stylesheet" href="../src/normalaze.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="map">
+            <img src="img/1.jpg" alt="">
+            <div class="hotel madrid">Madrid</div>
+            <div class="hotel turin">Turin</div>
+            <div class="hotel hamburg">Hamburg</div>
+            <div class="hotel krakow">Krakow</div>
+            <div class="buy hide">
+                Buy ticket to 
+                <div class="place">*select place*</div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        const hotels = document.querySelectorAll('.hotel')
+        const buy = document.querySelector('.buy')
+        let place = document.querySelector('.place')
+
+       for (item of hotels) {
+           item.addEventListener('mouseenter', showTicket)
+           item.addEventListener('mouseleave', hideTicket)
+       }
+
+       function showTicket(e) {
+            place.innerHTML = e.target.innerText;
+            buy.classList.remove('hide')
+       }
+
+       function hideTicket() {
+            buy.classList.add('hide')
+       }
+    </script>
+</body>
+</html>

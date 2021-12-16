@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background: #81CDC1;
+    background: -webkit-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: -moz-linear-gradient(top left, #81CDC1, #AA17F6);
+    background: linear-gradient(to bottom right, #81CDC1, #AA17F6); 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+canvas {
+    background-color: rgb(140, 140, 140);
+    margin-bottom: 30px;
+}  
+
+h2 {
+    margin: 0.67em 0;
+}
+
