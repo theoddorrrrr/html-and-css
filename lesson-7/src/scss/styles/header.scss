@@ -1,0 +1,34 @@
+header.grid {
+    min-height: $size-width+vh;
+    background-size: cover;
+    background-image: url("../img/header.jpg");
+    position: relative;
+    background-position: $position;
+    align-content: $position;
+
+    &::before {
+        content: "";
+        background-color: $color-grey;
+        position: absolute;
+        top: $zero-size;
+        left: $zero-size;
+        bottom: $zero-size;
+        right: $zero-size;
+        opacity: 0.65;
+    }
+
+    .header-container {
+        z-index: 1;
+        color: lighten($color-dark, 100);
+        text-align: $position;
+        padding: $size-main*6 $size-main*2;
+
+        h1 {
+            font-size: $size-main*6;
+            font-family: $font-family-main;
+            text-transform: uppercase;
+            margin: $size-main*2 $zero-size;
+            line-height: 1.5;
+        }
+    }
+}

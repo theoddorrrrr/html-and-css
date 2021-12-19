@@ -1,0 +1,32 @@
+.main-footer {
+    padding: $size-main*6 $zero-size $size-main*4 $zero-size;
+    background-color: darken($color-grey, 20);
+    text-align: $position;
+    color: lighten($color-dark, 65);
+    font-family: $font-family-main;
+}
+
+.footer {
+    &-copy img {
+        width: $size-main*3;
+        height: $size-main*3;
+        margin: 1em;
+        transition: all 0.25s ease;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+
+    &-logo span {
+        font-size: $size-main*2.8;
+        letter-spacing: calc($size-main/5);
+        line-height: 1.5;
+        display: block;
+
+        span {
+            font-size: $size-main*2;
+            letter-spacing: calc($size-main/10);
+        }
+    }
+}
